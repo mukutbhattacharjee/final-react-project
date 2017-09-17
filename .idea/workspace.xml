@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a546233-c491-45f7-802d-4e7e6ed6b0e9" name="Default" comment="" />
+    <list default="true" id="2a546233-c491-45f7-802d-4e7e6ed6b0e9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/App.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/reducers/all.reducers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/reducers/reducer.users.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/add-user/AddUserComponent.js" afterPath="$PROJECT_DIR$/src/components/add-user/AddUserComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/edit-user/EditUserComponent.js" afterPath="$PROJECT_DIR$/src/components/edit-user/EditUserComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/login/LoginComponent.js" afterPath="$PROJECT_DIR$/src/components/login/LoginComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/user-search-form/UserSearchFormComponent.js" afterPath="$PROJECT_DIR$/src/components/user-search-form/UserSearchFormComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/user-search-row/UserSearchRowComponent.js" afterPath="$PROJECT_DIR$/src/components/user-search-row/UserSearchRowComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/user-search-table/UserSearchTableComponent.js" afterPath="$PROJECT_DIR$/src/components/user-search-table/UserSearchTableComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/user-search/UserSearchComponent.js" afterPath="$PROJECT_DIR$/src/components/user-search/UserSearchComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,77 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserSearchTableComponent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/user-search-table/UserSearchTableComponent.js">
+      <file leaf-file-name="UserSearchFormComponent.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/user-search-form/UserSearchFormComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="68" column="55" lean-forward="false" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeComponent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/home/HomeComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="53" lean-forward="false" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/home/home.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginComponent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/login/LoginComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-375">
-              <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DashboardComponent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/dashboard/DashboardComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditUserComponent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/edit-user/EditUserComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="54" column="38" lean-forward="false" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+            <state relative-caret-position="584">
+              <caret line="69" column="32" lean-forward="false" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -92,23 +43,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserSearchComponent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/user-search/UserSearchComponent.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="22" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="12" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserSearchFormComponent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/user-search-form/UserSearchFormComponent.js">
+      <file leaf-file-name="reducer.users.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/reducers/reducer.users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+            <state relative-caret-position="209">
+              <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -120,15 +69,19 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AMD JavaScript File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>center</find>
+      <find>showSelectedUser</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -144,20 +97,26 @@
         <option value="$PROJECT_DIR$/src/components/user-search-table/UserSearchTable.test.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/components/dashboard/dashboard.css" />
-        <option value="$PROJECT_DIR$/src/components/add-user/AddUserComponent.js" />
         <option value="$PROJECT_DIR$/src/components/add-user/AddUser.css" />
         <option value="$PROJECT_DIR$/src/components/dashboard/DashboardComponent.js" />
         <option value="$PROJECT_DIR$/src/components/login/LoginComponent.css" />
-        <option value="$PROJECT_DIR$/src/components/login/LoginComponent.js" />
         <option value="$PROJECT_DIR$/src/components/edit-user/EditUser.css" />
-        <option value="$PROJECT_DIR$/src/components/user-search-row/UserSearchRowComponent.js" />
-        <option value="$PROJECT_DIR$/src/components/user-search-form/UserSearchFormComponent.js" />
-        <option value="$PROJECT_DIR$/src/components/edit-user/EditUserComponent.js" />
-        <option value="$PROJECT_DIR$/src/components/user-search/UserSearchComponent.js" />
-        <option value="$PROJECT_DIR$/src/components/user-search-table/UserSearchTableComponent.js" />
         <option value="$PROJECT_DIR$/src/components/home/home.css" />
         <option value="$PROJECT_DIR$/src/components/home/HomeComponent.js" />
+        <option value="$PROJECT_DIR$/src/components/login/LoginComponent.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/components/App.js" />
+        <option value="$PROJECT_DIR$/src/reducers/index.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/reducers/reducer.user.manager.js" />
+        <option value="$PROJECT_DIR$/src/components/user-search/UserSearchComponent.js" />
+        <option value="$PROJECT_DIR$/src/components/user-search-row/UserSearchRowComponent.js" />
+        <option value="$PROJECT_DIR$/src/components/edit-user/EditUserComponent.js" />
+        <option value="$PROJECT_DIR$/src/components/user-search-table/UserSearchTableComponent.js" />
+        <option value="$PROJECT_DIR$/src/components/add-user/AddUserComponent.js" />
+        <option value="$PROJECT_DIR$/src/components/user-search-form/UserSearchFormComponent.js" />
+        <option value="$PROJECT_DIR$/src/actions/index.js" />
+        <option value="$PROJECT_DIR$/src/reducers/reducer.users.js" />
       </list>
     </option>
   </component>
@@ -172,11 +131,14 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
     <option name="height" value="698" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -214,6 +176,12 @@
               <item name="final-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="final-project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="final-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="final-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -235,21 +203,14 @@
               <item name="final-project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="edit-user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="final-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="final-project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="final-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="final-project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="user-search" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="final-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="final-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="user-search-form" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="final-project" type="b2602c69:ProjectViewProjectNode" />
@@ -264,6 +225,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="user-search-table" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="final-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="final-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -344,7 +311,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1505497845223</updated>
-      <workItem from="1505497848111" duration="36750000" />
+      <workItem from="1505497848111" duration="66502000" />
     </task>
     <servers />
   </component>
@@ -354,21 +321,20 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36750000" />
+    <option name="totallyTimeSpent" value="66502000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21949404" sideWeight="0.49459043" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16294643" sideWeight="0.5054096" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51931995" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -406,7 +372,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -431,14 +397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="2120" column="8" lean-forward="false" selection-start-line="2120" selection-start-column="8" selection-end-line="2120" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -487,34 +445,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/user-search-form/userSearch.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-bootstrap/es/NavItem.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/user-search-table/UserSearchTable.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -551,26 +485,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-icons/lib/fa/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/add-user/AddUserComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="16" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -591,62 +509,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/user-search-row/UserSearchRow.test.js">
+    <entry file="file://$PROJECT_DIR$/src/components/home/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/user-search-row/UserSearchRowComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/user-search-form/UserSearchFormComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/dashboard/DashboardComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/user-search/UserSearchComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="12" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/edit-user/EditUserComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="54" column="38" lean-forward="false" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/user-search-table/UserSearchTableComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="68" column="55" lean-forward="false" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
+        <state relative-caret-position="30">
+          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -656,22 +522,176 @@
         <state relative-caret-position="195">
           <caret line="13" column="53" lean-forward="false" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/home/home.css">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        <state relative-caret-position="300">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/login/LoginComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375">
+        <state relative-caret-position="299">
+          <caret line="38" column="14" lean-forward="false" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/G:/reactjs/project/final-project/src">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/src/components/add-user/AddUser.css</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/add-user/AddUserComponent.js#AddUser.css#40;G:/reactjs/project/final-project/src/components/add-user/AddUserComponent.js#Button#72;G:/reactjs/project/final-project/src/components/add-user/AddUserComponent.js#Col#80;G:/reactjs/project/final-project/src/components/add-user/AddUserComponent.js#Component#15;G:/reactjs/project/final-project/src/components/add-user/AddUserComponent.js#ControlLabel#85;G:/reactjs/project/final-project/src/components/add-user/AddUserComponent.js#Form#99;G:/reactjs/project/final-project/src/components/add-user/AddUserComponent.js#FormControl#105;G:/reactjs/project/final-project/src/components/add-user/AddUserComponent.js#FormGroup#118;G:/reactjs/project/final-project/src/components/add-user/AddUserComponent.js#React#7;G:/reactjs/project/final-project/src/components/add-user/AddUserComponent.js#Row#129;G:/reactjs/project/final-project/src/components/add-user/AddUserComponent.js#addUser#165;G:/reactjs/project/final-project/src/components/add-user/AddUserComponent.js#bindActionCreators#239;G:/reactjs/project/final-project/src/components/add-user/AddUserComponent.js#connect#281;G:/reactjs/project/final-project/src/components/add-user/AddUserComponent.js#uuidv4#208;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/App.js#DashboardComponent#34;G:/reactjs/project/final-project/src/components/App.js#React#7;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/dashboard/DashboardComponent.js#AddUserComponent#92;G:/reactjs/project/final-project/src/components/dashboard/DashboardComponent.js#Component#14;G:/reactjs/project/final-project/src/components/dashboard/DashboardComponent.js#Nav#47;G:/reactjs/project/final-project/src/components/dashboard/DashboardComponent.js#NavItem#52;G:/reactjs/project/final-project/src/components/dashboard/DashboardComponent.js#React#7;G:/reactjs/project/final-project/src/components/dashboard/DashboardComponent.js#UserSearchComponent#153;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/edit-user/EditUser.css</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/edit-user/EditUserComponent.js#Button#73;G:/reactjs/project/final-project/src/components/edit-user/EditUserComponent.js#Col#81;G:/reactjs/project/final-project/src/components/edit-user/EditUserComponent.js#Component#15;G:/reactjs/project/final-project/src/components/edit-user/EditUserComponent.js#ControlLabel#86;G:/reactjs/project/final-project/src/components/edit-user/EditUserComponent.js#EditUser.css#40;G:/reactjs/project/final-project/src/components/edit-user/EditUserComponent.js#Form#100;G:/reactjs/project/final-project/src/components/edit-user/EditUserComponent.js#FormControl#106;G:/reactjs/project/final-project/src/components/edit-user/EditUserComponent.js#FormGroup#119;G:/reactjs/project/final-project/src/components/edit-user/EditUserComponent.js#React#7;G:/reactjs/project/final-project/src/components/edit-user/EditUserComponent.js#Row#130;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/home/HomeComponent.js#Link#92;G:/reactjs/project/final-project/src/components/home/HomeComponent.js#React#7;G:/reactjs/project/final-project/src/components/home/HomeComponent.js#Row#55;G:/reactjs/project/final-project/src/components/home/HomeComponent.js#home.css#27;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/login/LoginComponent.css</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/login/LoginComponent.js#Addon#123;G:/reactjs/project/final-project/src/components/login/LoginComponent.js#Button#95;G:/reactjs/project/final-project/src/components/login/LoginComponent.js#Col#90;G:/reactjs/project/final-project/src/components/login/LoginComponent.js#Component#14;G:/reactjs/project/final-project/src/components/login/LoginComponent.js#FaEnvelope#179;G:/reactjs/project/final-project/src/components/login/LoginComponent.js#FaKey#233;G:/reactjs/project/final-project/src/components/login/LoginComponent.js#Form#141;G:/reactjs/project/final-project/src/components/login/LoginComponent.js#FormControl#129;G:/reactjs/project/final-project/src/components/login/LoginComponent.js#FormGroup#102;G:/reactjs/project/final-project/src/components/login/LoginComponent.js#Grid#79;G:/reactjs/project/final-project/src/components/login/LoginComponent.js#InputGroup#112;G:/reactjs/project/final-project/src/components/login/LoginComponent.js#LoginComponent.css#39;G:/reactjs/project/final-project/src/components/login/LoginComponent.js#React#7;G:/reactjs/project/final-project/src/components/login/LoginComponent.js#Row#85;G:/reactjs/project/final-project/src/components/login/LoginComponent.js#withRouter#279;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/login/LoginComponent.test.js#LoginComponent#68;G:/reactjs/project/final-project/src/components/login/LoginComponent.test.js#React#7;G:/reactjs/project/final-project/src/components/login/LoginComponent.test.js#ReactDOM#34;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react/lib/React.js#Component#2496;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/user-search/UserSearchComponent.js#Component#14;G:/reactjs/project/final-project/src/components/user-search/UserSearchComponent.js#React#7;G:/reactjs/project/final-project/src/components/user-search/UserSearchComponent.js#UserSearchFormComponent#125;G:/reactjs/project/final-project/src/components/user-search/UserSearchComponent.js#UserSearchTableComponent#208;G:/reactjs/project/final-project/src/components/user-search/UserSearchComponent.js#bindActionCreators#47;G:/reactjs/project/final-project/src/components/user-search/UserSearchComponent.js#connect#89;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/user-search-form/UserSearchFormComponent.js#Button#74;G:/reactjs/project/final-project/src/components/user-search-form/UserSearchFormComponent.js#Component#15;G:/reactjs/project/final-project/src/components/user-search-form/UserSearchFormComponent.js#ControlLabel#82;G:/reactjs/project/final-project/src/components/user-search-form/UserSearchFormComponent.js#Form#96;G:/reactjs/project/final-project/src/components/user-search-form/UserSearchFormComponent.js#FormControl#102;G:/reactjs/project/final-project/src/components/user-search-form/UserSearchFormComponent.js#FormGroup#115;G:/reactjs/project/final-project/src/components/user-search-form/UserSearchFormComponent.js#Panel#126;G:/reactjs/project/final-project/src/components/user-search-form/UserSearchFormComponent.js#React#7;G:/reactjs/project/final-project/src/components/user-search-form/UserSearchFormComponent.js#userSearch.css#40;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/user-search-row/UserSearchRow.test.js#React#7;G:/reactjs/project/final-project/src/components/user-search-row/UserSearchRow.test.js#ReactDOM#34;G:/reactjs/project/final-project/src/components/user-search-row/UserSearchRow.test.js#UserSearchRowComponent#68;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/user-search-row/UserSearchRowComponent.js#Button#47;G:/reactjs/project/final-project/src/components/user-search-row/UserSearchRowComponent.js#Component#14;G:/reactjs/project/final-project/src/components/user-search-row/UserSearchRowComponent.js#React#7;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/user-search-table/UserSearchTable.test.js#React#7;G:/reactjs/project/final-project/src/components/user-search-table/UserSearchTable.test.js#ReactDOM#34;G:/reactjs/project/final-project/src/components/user-search-table/UserSearchTable.test.js#UserSearchTableComponent#68;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/user-search-table/UserSearchTableComponent.js#Component#14;G:/reactjs/project/final-project/src/components/user-search-table/UserSearchTableComponent.js#EditUserComponent#172;G:/reactjs/project/final-project/src/components/user-search-table/UserSearchTableComponent.js#Modal#127;G:/reactjs/project/final-project/src/components/user-search-table/UserSearchTableComponent.js#Panel#134;G:/reactjs/project/final-project/src/components/user-search-table/UserSearchTableComponent.js#React#7;G:/reactjs/project/final-project/src/components/user-search-table/UserSearchTableComponent.js#UserSearchRowComponent#46;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-icons/lib/fa/envelope.js</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/home/home.css</node>
+            <node x="" y="">$PROJECT_DIR$/src/index.css</node>
+            <node x="" y="">bindActionCreators;G:/reactjs/project/final-project/node_modules/redux/index.d.ts#combineReducers#2351;G:/reactjs/project/final-project/node_modules/redux/index.d.ts#createStore#10782;</node>
+            <node x="" y="">BrowserRouter;Link;Route;Switch;withRouter;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-redux/es/index.js#Provider#7;G:/reactjs/project/final-project/node_modules/react-redux/es/index.js#connect#133;</node>
+            <node x="" y="">$PROJECT_DIR$/src/index.js#App#532;G:/reactjs/project/final-project/src/index.js#BrowserRouter#213;G:/reactjs/project/final-project/src/index.js#DashboardComponent#338;G:/reactjs/project/final-project/src/index.js#HomeComponent#151;G:/reactjs/project/final-project/src/index.js#LoginComponent#274;G:/reactjs/project/final-project/src/index.js#Provider#495;G:/reactjs/project/final-project/src/index.js#React#7;G:/reactjs/project/final-project/src/index.js#ReactDOM#34;G:/reactjs/project/final-project/src/index.js#Route#228;G:/reactjs/project/final-project/src/index.js#Switch#235;G:/reactjs/project/final-project/src/index.js#allReducers#450;G:/reactjs/project/final-project/src/index.js#createStore#416;G:/reactjs/project/final-project/src/index.js#index.css#61;G:/reactjs/project/final-project/src/index.js#registerServiceWorker#90;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/src/reducers/index.js#UserReducer#46;G:/reactjs/project/final-project/src/reducers/index.js#combineReducers#8;</node>
+            <node x="" y="">$PROJECT_DIR$/src/actions/index.js</node>
+            <node x="" y="">Addon;G:/reactjs/project/final-project/node_modules/react-bootstrap/es/index.js#Button#411;G:/reactjs/project/final-project/node_modules/react-bootstrap/es/index.js#Col#1100;G:/reactjs/project/final-project/node_modules/react-bootstrap/es/index.js#ControlLabel#1041;G:/reactjs/project/final-project/node_modules/react-bootstrap/es/index.js#Form#1441;G:/reactjs/project/final-project/node_modules/react-bootstrap/es/index.js#FormControl#1516;G:/reactjs/project/final-project/node_modules/react-bootstrap/es/index.js#FormGroup#1592;G:/reactjs/project/final-project/node_modules/react-bootstrap/es/index.js#Grid#1725;G:/reactjs/project/final-project/node_modules/react-bootstrap/es/index.js#InputGroup#1929;G:/reactjs/project/final-project/node_modules/react-bootstrap/es/index.js#Modal#2416;G:/reactjs/project/final-project/node_modules/react-bootstrap/es/index.js#Nav#2784;G:/reactjs/project/final-project/node_modules/react-bootstrap/es/index.js#NavItem#3072;G:/reactjs/project/final-project/node_modules/react-bootstrap/es/index.js#Panel#3678;G:/reactjs/project/final-project/node_modules/react-bootstrap/es/index.js#Row#4112;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-icons/lib/fa/key.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react/react.js</node>
+            <node x="" y="">$PROJECT_DIR$/src/reducers/reducer.users.js</node>
+            <node x="" y="">$PROJECT_DIR$/src/registerServiceWorker.js</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/user-search-form/userSearch.css</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/uuid/v4.js</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.7780177890724269" x="935.1491099134412" y="696.3820022864609" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/reducer.user.manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/user-search-row/UserSearchRow.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dashboard/DashboardComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="28" column="89" lean-forward="false" selection-start-line="28" selection-start-column="89" selection-end-line="28" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/edit-user/EditUserComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-196">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/user-search-table/UserSearchTable.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/user-search-form/userSearch.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/user-search-table/UserSearchTableComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="67" column="11" lean-forward="false" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/user-search-row/UserSearchRowComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
           <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
@@ -679,13 +699,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
+    <entry file="file://$PROJECT_DIR$/src/reducers/all.reducers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/user-search/UserSearchComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/add-user/AddUserComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/user-search-form/UserSearchFormComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="69" column="32" lean-forward="false" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/reducer.users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>

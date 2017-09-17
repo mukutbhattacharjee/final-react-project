@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import './EditUser.css';
 import {Button, Col, ControlLabel, Form, FormControl, FormGroup, Row} from "react-bootstrap";
-
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
 
 export default class EditUserComponent extends Component{
 

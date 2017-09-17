@@ -1,5 +1,7 @@
 import React,{Component} from 'react';
 import {Button} from "react-bootstrap";
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
 
 class UserSearchRowComponent extends Component{
 
@@ -10,7 +12,7 @@ class UserSearchRowComponent extends Component{
 
     remove(){
         let id = this.props.user.id;
-        this.props.remove(id);
+        this.props.removeUser(id);
     }
 
     render(){

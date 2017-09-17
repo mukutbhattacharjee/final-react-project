@@ -3,6 +3,7 @@ import './LoginComponent.css';
 import { Grid, Row, Col, Button,FormGroup,InputGroup,Addon,FormControl,Form } from 'react-bootstrap';
 import FaEnvelope from 'react-icons/lib/fa/envelope';
 import FaKey from 'react-icons/lib/fa/key';
+import { withRouter } from 'react-router-dom'
 class LoginComponent extends Component{
 
     constructor(props){
@@ -26,10 +27,18 @@ class LoginComponent extends Component{
         })
     }
 
-    handleLogin(){
-        console.log(this.state.email +":"+ this.state.password);
+    handleLogin(event){
+        event.preventDefault();
+        if(this.state.email === 'mukut@example.com' && this.state.password === 'password'){
+            this.props.history.push('/dashboard')
+        }
+        else{
+            this.setState({
+                email:'',
+                password:''
+            })
+        }
     }
-
 
     render(){
         return(
@@ -41,7 +50,7 @@ class LoginComponent extends Component{
                 <br/>
                 <Row>
                     <Col xs = {12}>
-                        <Form>
+                        <Form onSubmit={(event)=>this.handleLogin(event)}>
                             <FormGroup>
                                 <InputGroup>
                                     <InputGroup.Addon><FaEnvelope/></InputGroup.Addon>
@@ -57,7 +66,7 @@ class LoginComponent extends Component{
                                 </InputGroup>
                             </FormGroup>
                             <div>
-                                <Button bsStyle="success" bsSize="small" onClick={()=>this.handleLogin()}>
+                                <Button type = "submit" bsStyle="success" bsSize="small">
                                     Get In
                                 </Button>
                             </div>

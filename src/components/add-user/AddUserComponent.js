@@ -1,20 +1,55 @@
 import React, {Component} from 'react';
 import './AddUser.css';
 import {Button, Col, ControlLabel, Form, FormControl, FormGroup, Row} from "react-bootstrap";
+import addUser from '../../actions/index';
+import uuidv4 from 'uuid/v4';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
 
+class AddUserComponent extends Component{
 
-export default class AddUserComponent extends Component{
+    constructor(props){
+        super(props);
+        this.state={
+            user_name:'',
+            user_email:'',
+            user_state:'',
+            user_city:''
+        }
+    }
+
+    addUser(event){
+        event.preventDefault();
+        let user = {
+            id: uuidv4(),
+            name:this.state.user_name,
+            email:this.state.user_email,
+            state:this.state.user_state,
+            city:this.state.user_city
+        };
+        this.props.addUser(user);
+        this.setState({
+            user_name:'',
+            user_email:'',
+            user_state:'',
+            user_city:''
+        })
+
+    }
+
     render(){
         return(
             <div className='add-user-form'>
-                <Form>
+                <Form onSubmit = {(event)=>this.addUser(event)}>
                     <FormGroup controlId="formHorizontalName">
                         <Row>
                             <Col componentClass={ControlLabel} sm={2}>
                                 Name:
                             </Col>
                             <Col sm={10}>
-                                <FormControl type="text"/>
+                                <FormControl type="text" value={this.state.user_name} onChange = {(event)=>this.setState({
+                                    user_name:event.target.value
+                                })}/>
                             </Col>
                         </Row>
 
@@ -26,7 +61,9 @@ export default class AddUserComponent extends Component{
                                 Email:
                             </Col>
                             <Col sm={10}>
-                                <FormControl type="email" />
+                                <FormControl type="email" value={this.state.user_email} onChange = {(event)=>this.setState({
+                                    user_email:event.target.value
+                                })}/>
                             </Col>
                         </Row>
                     </FormGroup>
@@ -37,7 +74,9 @@ export default class AddUserComponent extends Component{
                                 City:
                             </Col>
                             <Col sm={10}>
-                                <FormControl type="text" />
+                                <FormControl type="text" value={this.state.user_city} onChange = {(event)=>this.setState({
+                                    user_city:event.target.value
+                                })}/>
                             </Col>
                         </Row>
                     </FormGroup>
@@ -48,7 +87,9 @@ export default class AddUserComponent extends Component{
                                 State:
                             </Col>
                             <Col sm={10}>
-                                <FormControl type="text"/>
+                                <FormControl type="text" value={this.state.user_state} onChange = {(event)=>this.setState({
+                                    user_state:event.target.value
+                                })}/>
                             </Col>
                         </Row>
                     </FormGroup>
@@ -60,11 +101,14 @@ export default class AddUserComponent extends Component{
                             </Col>
                         </Row>
                     </FormGroup>
-
-
                 </Form>
             </div>
-
         )
     }
 }
+
+function matchDispatchToProps(dispatch) {
+    return bindActionCreators({addUser:addUser}, dispatch);
+}
+
+export default connect(null,matchDispatchToProps)(AddUserComponent);

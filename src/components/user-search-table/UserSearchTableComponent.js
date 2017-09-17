@@ -2,13 +2,17 @@ import React,{Component} from 'react';
 import UserSearchRowComponent from "../user-search-row/UserSearchRowComponent";
 import {Modal, Panel} from "react-bootstrap";
 import EditUserComponent from "../edit-user/EditUserComponent";
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import {removeUser} from '../../actions/index';
 
 class UserSearchTableComponent extends Component{
 
     constructor(props){
         super(props);
         this.state = {
-            showModal: false
+            showModal: false,
+            selectedUser:''
         }
     }
 
@@ -20,24 +24,22 @@ class UserSearchTableComponent extends Component{
         this.setState({ showModal: true });
     }
 
-    editUser(id){
-        console.log(id);
+    editUserModal(id){
         this.openModal();
     }
 
     removeUser(id){
-        console.log(id);
+        this.props.removeUser(id);
     }
 
     render(){
-
-        let user = {
+        let user= {
             id:1,
             name:"mukut",
             email:"mukut@abc.abc",
             city:"blr",
             state:"KA"
-        }
+        };
         return(
             <div>
                 <Panel header="Search Results">
@@ -55,7 +57,7 @@ class UserSearchTableComponent extends Component{
                         <tbody>
                         {this.props.users.map((user)=>{
                             return <UserSearchRowComponent key = {user.id} user={user}
-                                                           edit={this.editUser.bind(this)} remove={this.removeUser.bind(this)}/>
+                                                           edit={this.editUserModal.bind(this)} removeUser={this.removeUser.bind(this)}/>
                         })}
                         </tbody>
                     </table>
@@ -66,7 +68,7 @@ class UserSearchTableComponent extends Component{
                         <Modal.Title>Edit User Details</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <EditUserComponent user = {user}/>
+                        <EditUserComponent user={user}/>
                     </Modal.Body>
                 </Modal>
             </div>
@@ -74,4 +76,9 @@ class UserSearchTableComponent extends Component{
         )
     }
 }
-export default UserSearchTableComponent;
+
+function matchDispatchTopProps(dispatch) {
+    return bindActionCreators({removeUser:removeUser}, dispatch);
+}
+
+export default connect(null,matchDispatchTopProps)(UserSearchTableComponent);
