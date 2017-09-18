@@ -1,11 +1,8 @@
 import React, {Component} from 'react';
 import './userSearch.css'
 import {Button, ControlLabel, Form, FormControl, FormGroup, Panel} from "react-bootstrap";
-import {bindActionCreators} from 'redux';
-import {connect} from 'react-redux';
-import {searchReset, searchUser} from "../../actions/index";
 
-class UserSearchFormComponent extends Component{
+export default class UserSearchFormComponent extends Component{
 
     constructor(props){
         super(props);
@@ -17,20 +14,22 @@ class UserSearchFormComponent extends Component{
     render(){
         return(
             <Panel header="Search Users">
-                <Form inline>
+                <Form inline onSubmit={(event)=>this.handleSearch(event)}>
                     <FormGroup controlId="formInlineName">
                         <ControlLabel>Name</ControlLabel>
                         {'* '}
-                        <FormControl type="text" value = {this.state.name} onChange = {(event) => this.handleNameChange(event)}/>
+                        <FormControl type="text" value = {this.state.name}
+                                     onChange = {(event) => this.handleNameChange(event)} required/>
                     </FormGroup>
                     {' '}
                     <FormGroup controlId="formInlineEmail">
                         <ControlLabel>Email</ControlLabel>
                         {'* '}
-                        <FormControl type="email" value = {this.state.email} onChange = {(event) => this.handleEmailChange(event)}/>
+                        <FormControl type="email" value = {this.state.email}
+                                     onChange = {(event) => this.handleEmailChange(event)} required/>
                     </FormGroup>
                     {' '}
-                    <Button  bsStyle="info" type="button" onClick={()=>this.handleSearch()}>
+                    <Button  bsStyle="info" type="submit">
                         Search
                     </Button>
                     {' '}
@@ -54,12 +53,13 @@ class UserSearchFormComponent extends Component{
         });
     }
 
-    handleSearch() {
+    handleSearch(event) {
+        event.preventDefault();
         let searchKey = {
             name:this.state.name,
             email:this.state.email
         };
-        this.props.searchUser(searchKey);
+        this.props.search(searchKey);
     }
 
     handleReset() {
@@ -67,12 +67,6 @@ class UserSearchFormComponent extends Component{
             name:'',
             email:''
         });
-        this.props.searchReset();
+        this.props.reset();
     }
 }
-
-function matchDispatchToProps(dispatch){
-    return bindActionCreators({searchUser:searchUser,searchReset:searchReset}, dispatch);
-}
-
-export default connect(null,matchDispatchToProps)(UserSearchFormComponent);

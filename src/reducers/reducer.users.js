@@ -1,52 +1,60 @@
-const initialState = [
-    {
-        id:1,
-        name:"mukut",
-        email:"mukut@abc.abc",
-        city:"blr",
-        state:"KA"
-    },
-    {
-        id:3,
-        name:"melissa",
-        email:"melissa@abc.abc",
-        city:"blr",
-        state:"KA"
-    },
-    {
-        id:2,
-        name:"abhishek",
-        email:"abhishek@abc.abc",
-        city:"blr",
-        state:"KA"
-    }
-];
+const initialState = {
+    searchKey:'',
+    storedUsers:[
+        {
+            id:1,
+            name:"mukut",
+            email:"mukut@abc.abc",
+            city:"blr",
+            state:"KA"
+        },
+        {
+            id:2,
+            name:"melissa",
+            email:"melissa@abc.abc",
+            city:"blr",
+            state:"KA"
+        },
+        {
+            id:3,
+            name:"abhishek",
+            email:"abhishek@abc.abc",
+            city:"blr",
+            state:"KA"
+        }
+    ]
+};
 
-let searchUsers = initialState;
-let finalState = initialState;
 
-export default function (state=finalState,action) {
+export default function (state=initialState,action) {
     switch (action.type){
-        case "SEARCH_RESET":
-            return finalState;
+        case "USER_SEARCHED":
+            return Object.assign({}, state, {
+                searchKey: action.payload
+            });
             break;
         case "USER_ADDED":
-            return [...finalState,action.payload];
-            break;
-        case "USER_SEARCHED":
-            searchUsers = state.filter((x)=>{
-                return (x.name === action.payload.name && x.email === action.payload.email)
+            let new_user = action.payload;
+            new_user.id = state.storedUsers.length + 1;
+            return Object.assign({}, state, {
+                storedUsers: [...(state.storedUsers),new_user]
             });
-            return searchUsers;
+            break;
 
-            break;
         case "USER_REMOVED":
-            finalState =  state.filter((x)=>{
-                return x.id != action.payload;
+            return Object.assign({}, state, {
+                storedUsers: state.storedUsers.filter((x)=>{
+                    return x.id !== action.payload;
+                })
             });
-            return finalState;
             break;
+
+        case "USER_EDITED":
+            state.storedUsers[action.payload.id-1]=action.payload;
+            return state;
+            break;
+
         default:
-            return finalState;
+            return state;
     }
 }

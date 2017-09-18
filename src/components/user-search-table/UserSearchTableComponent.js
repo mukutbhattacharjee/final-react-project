@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React, {Component} from 'react';
 import UserSearchRowComponent from "../user-search-row/UserSearchRowComponent";
 import {Modal, Panel} from "react-bootstrap";
 import EditUserComponent from "../edit-user/EditUserComponent";
@@ -24,7 +24,10 @@ class UserSearchTableComponent extends Component{
         this.setState({ showModal: true });
     }
 
-    editUserModal(id){
+    editUserModal(user){
+        this.setState({
+            selectedUser:user
+        })
         this.openModal();
     }
 
@@ -33,13 +36,6 @@ class UserSearchTableComponent extends Component{
     }
 
     render(){
-        let user= {
-            id:1,
-            name:"mukut",
-            email:"mukut@abc.abc",
-            city:"blr",
-            state:"KA"
-        };
         return(
             <div>
                 <Panel header="Search Results">
@@ -56,7 +52,7 @@ class UserSearchTableComponent extends Component{
                         </thead>
                         <tbody>
                         {this.props.users.map((user)=>{
-                            return <UserSearchRowComponent key = {user.id} user={user}
+                            return <UserSearchRowComponent user={user} key = {user.id}
                                                            edit={this.editUserModal.bind(this)} removeUser={this.removeUser.bind(this)}/>
                         })}
                         </tbody>
@@ -68,7 +64,7 @@ class UserSearchTableComponent extends Component{
                         <Modal.Title>Edit User Details</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <EditUserComponent user={user}/>
+                        <EditUserComponent user={this.state.selectedUser} closeModal={()=>this.closeModal()}/>
                     </Modal.Body>
                 </Modal>
             </div>

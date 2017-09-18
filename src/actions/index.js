@@ -1,21 +1,22 @@
-const addUser = (user) =>{
+export const addUser = (user) =>{
     return{
         type: "USER_ADDED",
         payload: user
-    }
+    };
 };
 
-export const searchUser = (searchKey) =>{
-    console.log("Searched: "+searchKey);
+
+export const searchKey = (key)=>{
     return{
         type: "USER_SEARCHED",
-        payload: searchKey
+        payload: key
     }
 };
 
-export const searchReset = () =>{
+export const addAdmin = (admin)=>{
     return{
-        type: "SEARCH_RESET"
+        type: "ADMIN_ADDED",
+        payload: admin
     }
 };
 
@@ -26,4 +27,9 @@ export const removeUser = (id) =>{
     }
 };
 
-export default (addUser) ;
+export const editUser = (user) =>{
+    return{
+        type: "USER_EDITED",
+        payload: user
+    }
+};

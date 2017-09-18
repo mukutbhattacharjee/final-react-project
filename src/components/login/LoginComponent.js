@@ -1,41 +1,59 @@
-import React,{Component} from 'react';
+import React, {Component} from 'react';
 import './LoginComponent.css';
-import { Grid, Row, Col, Button,FormGroup,InputGroup,Addon,FormControl,Form } from 'react-bootstrap';
+import {Addon, Button, Col, Form, FormControl, FormGroup, Grid, InputGroup, Row} from 'react-bootstrap';
 import FaEnvelope from 'react-icons/lib/fa/envelope';
 import FaKey from 'react-icons/lib/fa/key';
-import { withRouter } from 'react-router-dom'
+import {connect} from "react-redux";
+
 class LoginComponent extends Component{
 
     constructor(props){
         super(props);
         this.state={
             email:'',
-            password:''
+            password:'',
+            validation_state:'',
+            error_text:''
         }
 
     }
 
+    goToRegister(){
+        this.props.history.push('/register');
+    }
+
     handlePasswordChange(event){
         this.setState({
-            password: event.target.value
+            password: event.target.value,
+            validation_state:'',
+            error_text:''
         })
     }
 
     handleEmailChange(event){
         this.setState({
-            email: event.target.value
+            email: event.target.value,
+            validation_state:'',
+            error_text:'',
         })
     }
 
     handleLogin(event){
         event.preventDefault();
-        if(this.state.email === 'mukut@example.com' && this.state.password === 'password'){
-            this.props.history.push('/dashboard')
+        let validAdmins = (this.props.admins.filter(x=>{
+                return (x.email === this.state.email && x.password === this.state.password);
+            }));
+        if(validAdmins.length>0){
+            console.log("login success");
+            this.props.history.push('/dashboard');
         }
         else{
+            console.log("login fail");
             this.setState({
                 email:'',
-                password:''
+                password:'',
+                validation_state:'error',
+                error_text:'Email or Password did not match'
             })
         }
     }
@@ -51,18 +69,20 @@ class LoginComponent extends Component{
                 <Row>
                     <Col xs = {12}>
                         <Form onSubmit={(event)=>this.handleLogin(event)}>
-                            <FormGroup>
+                            <FormGroup validationState={this.state.validation_state}>
                                 <InputGroup>
                                     <InputGroup.Addon><FaEnvelope/></InputGroup.Addon>
                                     <FormControl type="email" placeholder = "email id"
-                                                 value={this.state.email} onChange={(event)=>this.handleEmailChange(event)}/>
+                                                 value={this.state.email}
+                                                 onChange={(event)=>this.handleEmailChange(event)} required/>
                                 </InputGroup>
                             </FormGroup>
-                            <FormGroup>
+                            <FormGroup validationState={this.state.validation_state}>
                                 <InputGroup>
                                     <InputGroup.Addon><FaKey/></InputGroup.Addon>
                                     <FormControl type="password" placeholder="password"
-                                                 value={this.state.password} onChange={(event)=>this.handlePasswordChange(event)}/>
+                                                 value={this.state.password}
+                                                 onChange={(event)=>this.handlePasswordChange(event)} required/>
                                 </InputGroup>
                             </FormGroup>
                             <div>
@@ -75,7 +95,11 @@ class LoginComponent extends Component{
                 </Row>
                 <br/>
                 <Row>
-                    <Col xs = {12}>Don't have an account? <span className="register-link">Create one</span></Col>
+                    <div className="error_text">{this.state.error_text}</div>
+                </Row>
+                <Row>
+                    <Col xs = {12}>Don't have an account?
+                        <span onClick={this.goToRegister.bind(this)} className="register-link">Create one</span></Col>
                 </Row>
             </Grid>
         </div>
@@ -83,4 +107,10 @@ class LoginComponent extends Component{
     }
 }
 
-export default LoginComponent;
+function mapStateToProps(state){
+    return {
+        admins:state.admins
+    };
+}
+
+export default connect(mapStateToProps)(LoginComponent);

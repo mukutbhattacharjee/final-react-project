@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import './AddUser.css';
 import {Button, Col, ControlLabel, Form, FormControl, FormGroup, Row} from "react-bootstrap";
-import addUser from '../../actions/index';
-import uuidv4 from 'uuid/v4';
+import {addUser} from '../../actions/index';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
@@ -21,7 +20,6 @@ class AddUserComponent extends Component{
     addUser(event){
         event.preventDefault();
         let user = {
-            id: uuidv4(),
             name:this.state.user_name,
             email:this.state.user_email,
             state:this.state.user_state,
@@ -33,8 +31,8 @@ class AddUserComponent extends Component{
             user_email:'',
             user_state:'',
             user_city:''
-        })
-
+        });
+        this.props.completed_adding();
     }
 
     render(){
@@ -49,7 +47,7 @@ class AddUserComponent extends Component{
                             <Col sm={10}>
                                 <FormControl type="text" value={this.state.user_name} onChange = {(event)=>this.setState({
                                     user_name:event.target.value
-                                })}/>
+                                })} required/>
                             </Col>
                         </Row>
 
@@ -63,7 +61,7 @@ class AddUserComponent extends Component{
                             <Col sm={10}>
                                 <FormControl type="email" value={this.state.user_email} onChange = {(event)=>this.setState({
                                     user_email:event.target.value
-                                })}/>
+                                })} required/>
                             </Col>
                         </Row>
                     </FormGroup>
@@ -76,7 +74,7 @@ class AddUserComponent extends Component{
                             <Col sm={10}>
                                 <FormControl type="text" value={this.state.user_city} onChange = {(event)=>this.setState({
                                     user_city:event.target.value
-                                })}/>
+                                })} required/>
                             </Col>
                         </Row>
                     </FormGroup>
@@ -89,7 +87,7 @@ class AddUserComponent extends Component{
                             <Col sm={10}>
                                 <FormControl type="text" value={this.state.user_state} onChange = {(event)=>this.setState({
                                     user_state:event.target.value
-                                })}/>
+                                })} required/>
                             </Col>
                         </Row>
                     </FormGroup>

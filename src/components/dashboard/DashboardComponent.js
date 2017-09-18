@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React, {Component} from 'react';
 import {Nav, NavItem} from "react-bootstrap";
 import AddUserComponent from "../add-user/AddUserComponent";
 import UserSearchComponent from "../user-search/UserSearchComponent";
@@ -8,13 +8,19 @@ class DashboardComponent extends Component{
     constructor(props){
         super(props);
         this.state = {
-            selectedTab:'add_user'
+            selectedTab:'search_user'
         }
     }
 
     handleSelect(eventKey) {
         this.setState({
             selectedTab:eventKey
+        });
+    }
+
+    switchToSearchTab(){
+        this.setState({
+            selectedTab:'search_user'
         });
     }
 
@@ -26,7 +32,7 @@ class DashboardComponent extends Component{
                     <NavItem eventKey="search_user" active={this.state.selectedTab === 'search_user'}>Search & Update User</NavItem>
                 </Nav>
                 {
-                    this.state.selectedTab === 'add_user'?<AddUserComponent/>:<UserSearchComponent/>
+                    this.state.selectedTab === 'add_user'?<AddUserComponent completed_adding = {()=>this.switchToSearchTab()}/>:<UserSearchComponent/>
                 }
             </div>
         )

@@ -1,13 +1,11 @@
-import React,{Component} from 'react';
+import React, {Component} from 'react';
 import {Button} from "react-bootstrap";
-import {bindActionCreators} from 'redux';
-import {connect} from 'react-redux';
 
 class UserSearchRowComponent extends Component{
 
     edit(){
-        let id = this.props.user.id;
-        this.props.edit(id);
+        let user = this.props.user;
+        this.props.edit(user);
     }
 
     remove(){
